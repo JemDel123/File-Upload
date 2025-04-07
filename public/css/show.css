@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color: #6ab7eb;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #138496;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.btn-nm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
