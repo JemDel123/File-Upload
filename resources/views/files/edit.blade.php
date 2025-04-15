@@ -6,16 +6,9 @@
     <title>File Edit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="{{ asset('css/create.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/file-list.css') }}">
 </head>
 <body>
-    <div class="container mt-4">
-        <div class="card">
-            <div class="card-header"><h4><strong>Edit File</strong></h4></div>
-            <div class="card-body">
-                <a href="{{ route('files.index') }}" class="btn btn-info btn-sm mb-3">
-                    <i class="fa fa-arrow-left"></i><strong> Back</strong>
-                </a>
 
                 <form action="{{ route('files.update', $file->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
@@ -43,15 +36,14 @@
                         <small class="form-text text-muted">Current file: {{ basename($file->updload_file) }}</small>
                     </div>
 
-                    <div class="mt-2">
+                    
                         <button type="submit" class="btn btn-success btn-sm">
                             <i class="fa fa-save"></i><strong> Save</strong>
                         </button>
-                    </div>
+                    
                 </form>
-            </div>
-        </div>
-    </div>
+           
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
